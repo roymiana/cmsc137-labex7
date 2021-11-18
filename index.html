@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Miana - Lab Exercise 7</title>
+    <link href="markdown.css" rel="stylesheet"/>
+    <script src="js/simpleParity.js"></script>
+    <script src="js/twoDimensional.js"></script>
+    <script src="js/checkSum.js"></script>
+  </head>
+  <body>
+    <h3>Lab Exercise 7: Error Detection Techniques</h3>
+    <p>by Jose Roy C. Miana</p>
+    <hr />
+        <h4>A. Simple Parity Check (Even Parity)</h4>
+        <p>> Input A</p>
+        <input id="spA" type="number">
+        <p>> Input B</p>
+        <input id="spB" type="number">
+        <br>
+        <button onclick="simpleParityButton()">Check</button>
+        <h5 style="margin-bottom: 0px">Output</h5>
+        <pre style="margin: 0em">
+            <code id="spOutput">---</code>
+        </pre>
+    <hr />
+        <h4>B. Two-dimensional Parity Check</h4>
+        <!-- <p>> Input A</p>
+        <input 
+            id="tdA"
+            type="text"
+            style="width: 90%"
+        > -->
+        <p>> Input B</p>
+        <input 
+            id="tdB"
+            type="text"
+            style="width: 90%"
+        >
+        <br>
+        <button onclick="twoDimensionalButton()">Check</button>
+        <h5 style="margin-bottom: 0px">Output</h5>
+        <pre style="margin: 0em">
+            <code id="tdOutput">---</code>
+        </pre>
+    <hr />
+        <h4>C. Checksum</h4>
+        <p>> Input A</p>
+        <input 
+            id="csA"
+            type="text"
+            style="width: 90%"
+        >
+        <br>
+        <button onclick="checkSumButton()">Check</button>
+        <h5 style="margin-bottom: 0px">Output</h5>
+        <pre style="margin: 0em">
+            <code id="csOutput">---</code>
+        </pre>
+    <hr />
+    <h4>D. Cyclic Redundancy Check</h4>
+  </body>
+</html>
