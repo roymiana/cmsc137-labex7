@@ -1,10 +1,10 @@
 function parityGenerator(word) {
-	let oneSum = 0;
+	var oneSum = 0;
 	for (var i of word) {
 		if(i === '1')
 			oneSum++;
 	}
-	return oneSum%2 === 0 ? 0 : 1;
+	return oneSum%2 === 0 ? '0' : '1';
 }
 
 function parityBit(word) {

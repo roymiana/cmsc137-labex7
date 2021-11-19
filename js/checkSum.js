@@ -22,17 +22,6 @@ const addBinary = (str1, str2) => {
     }
     return tempBinary;
 }
-
- function removeSpace(string) {
-     return string.replace(/\s/g, "");
- }
-
- function isBinary(word) {
-	for (var i of word) {
-		if (i !== '0' && i !== '1') return false;
-	}
-	return true;
-}
  
  function seperateData(message){
     let data = [];

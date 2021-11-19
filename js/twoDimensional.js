@@ -2,13 +2,6 @@ function removeSpace(string) {
 	return string.replace(/\s/g, "");
 }
 
-function isBinary(word) {
-	for (var i of word) {
-		if (i !== '0' && i !== '1') return false;
-	}
-	return true;
-}
-
 function convertToArray(word) {
 	word = removeSpace(word);
 
@@ -24,15 +17,6 @@ function convertToArray(word) {
     }
 	} 
 	return message;
-}
-
-function parityGenerator(word) {
-	var oneSum = 0;
-	for (var i of word) {
-		if(i === '1')
-			oneSum++;
-	}
-	return oneSum%2 === 0 ? '0' : '1';
 }
 
 function rowParity(message) {

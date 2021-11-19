@@ -8,15 +8,16 @@
     <script src="js/simpleParity.js"></script>
     <script src="js/twoDimensional.js"></script>
     <script src="js/checkSum.js"></script>
+    <script src="js/crc.js"></script>
   </head>
   <body>
     <h3>Lab Exercise 7: Error Detection Techniques</h3>
     <p>by Jose Roy C. Miana</p>
     <hr />
         <h4>A. Simple Parity Check (Even Parity)</h4>
-        <p>> Input A</p>
+        <p>> Input A (8-bit)</p>
         <input id="spA" type="number">
-        <p>> Input B</p>
+        <p>> Input B (8-bit + Parity bit)</p>
         <input id="spB" type="number">
         <br>
         <button onclick="simpleParityButton()">Check</button>
@@ -32,7 +33,7 @@
             type="text"
             style="width: 90%"
         > -->
-        <p>> Input B</p>
+        <p>> Input B(45 bits)</p>
         <input 
             id="tdB"
             type="text"
@@ -46,7 +47,7 @@
         </pre>
     <hr />
         <h4>C. Checksum</h4>
-        <p>> Input A</p>
+        <p>> Input A (40 bits)</p>
         <input 
             id="csA"
             type="text"
@@ -59,6 +60,17 @@
             <code id="csOutput">---</code>
         </pre>
     <hr />
-    <h4>D. Cyclic Redundancy Check</h4>
+        <h4>D. Cyclic Redundancy Check</h4>
+        <p>> Input A (7 bits)</p>
+        <input 
+            id="crcA"
+            type="number"
+        >
+        <br>
+        <button onclick="crcButton()">Check</button>
+        <h5 style="margin-bottom: 0px">Output</h5>
+        <pre style="margin: 0em">
+            <code id="crcOutput">---</code>
+        </pre>
   </body>
 </html>
