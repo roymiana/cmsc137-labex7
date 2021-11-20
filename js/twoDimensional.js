@@ -53,11 +53,10 @@ function columnParity(message){
 
 function twoDimensionalCheck(receivedWord) {
 	receivedWord = removeSpace(receivedWord);
-    let validityA = true;
 	let validityB = receivedWord.length === 45 && isBinary(receivedWord);
 
 	let message = '';
-	if(validityA && validityB){
+	if(validityB){
 		let data = convertToArray(receivedWord);
 		let cParity = columnParity(data);
 		let rParity = rowParity(data);
