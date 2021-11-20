@@ -27,8 +27,7 @@ function crcDivision(dividend) {
 
 function crc(data){
     console.log(data.length)
-    let validity = data.length === 7 && isBinary(data)
-                    ? true : false;
+    let validity = data.length === 7 && isBinary(data);
     
     let message;
     if(validity){

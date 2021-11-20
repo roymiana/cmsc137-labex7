@@ -28,7 +28,7 @@ function rowParity(message) {
         tempMessage.push(message[i][j])
     }
 		parityBit = parityGenerator(tempMessage);
-		if(parityBit!==message[i][j])
+		if(parityBit!==parseInt(message[i][j]))
 			error++;
 		tempMessage = [];
 	} 
@@ -44,22 +44,17 @@ function columnParity(message){
 				tempMessage.push(message[i][j]);
     }
 		parityBit = parityGenerator(tempMessage);
-		if(parityBit!==message[i][j])
+		if(parityBit!==parseInt(message[i][j]))
 			error++;
 		tempMessage = [];
 	} 
 	return error;
 }
 
-function twoDimensionalCheck(sentWord, receivedWord) {
-	// sentWord = removeSpace(sentWord);
+function twoDimensionalCheck(receivedWord) {
 	receivedWord = removeSpace(receivedWord);
-
-	// let validityA = sentWord.length === 32 && isBinary(sentWord)
-	// 							? true : false;
     let validityA = true;
-	let validityB = receivedWord.length === 45 && isBinary(receivedWord)
-								? true : false;
+	let validityB = receivedWord.length === 45 && isBinary(receivedWord);
 
 	let message = '';
 	if(validityA && validityB){

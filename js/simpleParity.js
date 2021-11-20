@@ -7,14 +7,12 @@ function syndromeChecker(receivedWord) {
 	let rParity = parseInt(parityBit(receivedWord));
 	let rCount = parseInt(parityGenerator(receivedWord.substring(0, receivedWord.length-1)));
 	
-	return rParity===rCount ? true : false;
+	return rParity===rCount;
 }
 
 function simpleParityCheck(sentWord, receivedWord) {
-    let validityA = sentWord.length === 8 && isBinary(sentWord)
-                    ? true : false;
-    let validityB = receivedWord.length === 9 && isBinary(receivedWord)
-                    ? true : false;
+    let validityA = sentWord.length === 8 && isBinary(sentWord);
+    let validityB = receivedWord.length === 9 && isBinary(receivedWord);
 	let syndrome = syndromeChecker(receivedWord);
 	let status = syndrome ? receivedWord.substring(0, receivedWord.length-1): 'Discarded';
 

@@ -50,8 +50,7 @@ function sum(data){
  function checkSum(receivedWord){
     receivedWord = removeSpace(receivedWord);
 
-    let validityB = receivedWord.length === 40 && isBinary(receivedWord)
-                    ? true : false;
+    let validityB = receivedWord.length === 40 && isBinary(receivedWord);
     
     let message;
     if(validityB){

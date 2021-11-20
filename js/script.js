@@ -4,7 +4,7 @@ function parityGenerator(word) {
 		if(i === '1')
 			oneSum++;
 	}
-	return oneSum%2 === 0 ? '0' : '1';
+	return oneSum%2;
 }
 
 function isBinary(word) {
@@ -20,7 +20,7 @@ function simpleParityButton() {
 }
 
 function twoDimensionalButton() {
-    document.getElementById("tdOutput").innerHTML = twoDimensionalCheck('document.getElementById("tdA").value', document.getElementById("tdB").value);
+    document.getElementById("tdOutput").innerHTML = twoDimensionalCheck(document.getElementById("tdB").value);
 }
 
 function checkSumButton() {
