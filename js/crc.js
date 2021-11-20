@@ -31,9 +31,9 @@ function crc(data){
     
     let message;
     if(validity){
-        let quotient = crcDivision(data);
+        let remainder = crcDivision(data);
 
-        if(quotient === '000') {
+        if(remainder === '000') {
             message = 'Accept Data';
         }
         else {
