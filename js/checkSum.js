@@ -23,7 +23,7 @@ const addBinary = (str1, str2) => {
     return tempBinary;
 }
  
- function seperateData(message){
+function seperateData(message){
     let data = [];
     for (var i = 0; i < 5; i++) {
         data.push(message.substring(i*8, (i*8)+8));
@@ -31,7 +31,7 @@ const addBinary = (str1, str2) => {
     return data;
  }
 
- function sum(data){
+function sum(data){
     let tempAns = 0;
     let currentAns = data[0];
     for (var i = 1; i < 5; i++) {
@@ -73,6 +73,3 @@ const addBinary = (str1, str2) => {
     return message;
  }
  
- function checkSumButton() {
-    document.getElementById("csOutput").innerHTML = checkSum(document.getElementById("csA").value);
-}

@@ -76,7 +76,3 @@ function twoDimensionalCheck(sentWord, receivedWord) {
 	
 	return message;
 }
-
-function twoDimensionalButton() {
-    document.getElementById("tdOutput").innerHTML = twoDimensionalCheck('document.getElementById("tdA").value', document.getElementById("tdB").value);
-}

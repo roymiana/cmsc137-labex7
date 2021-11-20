@@ -47,7 +47,3 @@ function crc(data){
 
     return message;
 }
-
-function crcButton() {
-    document.getElementById("crcOutput").innerHTML = crc(document.getElementById("crcA").value);
-}
