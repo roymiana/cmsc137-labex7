@@ -1,4 +1,4 @@
-function andBinary(str1, str2) {
+function xorBinary(str1, str2) {
     let ans = '';
     for(var i = 1; i < 4; i++){
         if(str1[i]===str2[i])
@@ -19,12 +19,13 @@ function crcDivision(dividend) {
         quotient += dividend[i-3];
 
         divisor = remainder[0] === '1' ? '1011' : '0000';
-        remainder = andBinary(remainder, divisor);
+        remainder = xorBinary(remainder, divisor);
+    }
 
     return remainder;
 }
 
-function crc(data){
+function crc(data) {
     console.log(data.length)
     let validity = data.length === 7 && isBinary(data);
     
